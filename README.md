@@ -26,3 +26,4 @@ The HRnet keypoint detection model was training using the
 ## Step 7: Visualization of annotated behaviors 
 
 
+## Step 8: Verifcation by human annotator
