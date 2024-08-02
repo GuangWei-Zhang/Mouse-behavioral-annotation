@@ -17,8 +17,18 @@ The fasterRCNN model was trained using the openmmlab. The model format is .pth f
 ## Step 4: Training a HRnet keypoint detection model
 The HRnet keypoint detection model was training using the 
 
-## Step 5: Training a Fast Slow actition recognition model
+## Step 5: A SAM + FasterRCNN based tracking model
+python version 3.11
+CUDA version 11.8
 
+```python
+pip install torch==2.3.1 torchvision==1.18.1  torchaudio=2.3.1 –index-url https://download.pytorch.org/whl/cu118
+```
+
+The SAM for video model can be downloaded through 
+```python
+https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_large.pt
+```
 
 ## Step 6: Differentiation of sniffing and grooming behavior
 
