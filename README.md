@@ -9,6 +9,12 @@ A detailed guide regarding the usage of boris can be found here.
 https://www.boris.unito.it/user_guide/pdf/boris_user_guide.pdf#page=3.14
 
 ## Step 2: LabelMe annotation
+LabelMe works great for bbox and keypoints annotation, 
+LabelMe can be downloaded from https://github.com/labelmeai/labelme
+Instruction regarding how to use LabelMe has been detailed in the official website.
+After annotation, we converted the annotation to COCO format using the labelme2coco package
+https://github.com/fcakyon/labelme2coco
+
 
 ## Step 3: Training a FasterRCNN Mouse Detection Head
 The fasterRCNN model was trained using the openmmlab in a GPU machine
