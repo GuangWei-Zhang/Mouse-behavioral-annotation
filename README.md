@@ -11,7 +11,33 @@ https://www.boris.unito.it/user_guide/pdf/boris_user_guide.pdf#page=3.14
 ## Step 2: LabelMe annotation
 
 ## Step 3: Training a FasterRCNN Mouse Detection Head
-The fasterRCNN model was trained using the openmmlab. The model format is .pth file. 
+The fasterRCNN model was trained using the openmmlab in a GPU machine
+First create a virtual environment
+```python
+conda create --name openmmlab python=3.8 -y
+conda activate openmmlab
+```
+Then 
+```python
+conda install pytorch torchvision -c pytorch
+```
+Then 
+```python
+pip install -U openmim
+mim install mmengine
+mim install "mmcv>=2.0.0"
+```
+final step is to install the mmdetection
+```python
+git clone https://github.com/open-mmlab/mmdetection.git
+cd mmdetection
+pip install -v -e .
+```
+The configuration file and the trained model can be found in the the github folder
+
+
+
+
 
 
 ## Step 4: Training a HRnet keypoint detection model
