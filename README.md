@@ -39,8 +39,10 @@ git clone https://github.com/open-mmlab/mmdetection.git
 cd mmdetection
 pip install -v -e .
 ```
-The configuration file and the trained model can be found in the the github folder
+The configuration file can be found in the the github folder
 
+The trained detection head can be accessed here:
+https://drive.google.com/drive/folders/1xghVPv2haytx1HxOOl0aD77w-fFzncdY?usp=sharing
 
 
 
