@@ -50,6 +50,41 @@ The configuration file and the trained model can be found in the the github fold
 The HRnet keypoint detection model was training using the 
 
 ## Step 5: A SAM + FasterRCNN based tracking model
+This step requires a GPU machine to work.
+First, let's install anaconda
+```python
+https://www.anaconda.com/download/success
+```
+Then, let's install cuda 11.8
+```python
+https://developer.nvidia.com/cuda-11-8-0-download-archive
+```
+In the anaconda prompt, you can check the cuda using
+```python
+nvidia-smi
+```
+This one would display the GPU status as follows, you can have a different GPU model and CUDA version depends on your system.
+Mon Aug  5 12:21:34 2024
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 536.23                 Driver Version: 536.23       CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                     TCC/WDDM  | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce RTX 3070      WDDM  | 00000000:01:00.0 Off |                  N/A |
+|  0%   42C    P8               7W / 220W |      0MiB /  8192MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA GeForce RTX 3070      WDDM  | 00000000:4B:00.0  On |                  N/A |
+|  0%   54C    P8              24W / 220W |   6404MiB /  8192MiB |     14%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+
+
+
+
+
 python version 3.11
 CUDA version 11.8
 
