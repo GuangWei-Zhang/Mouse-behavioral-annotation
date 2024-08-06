@@ -52,7 +52,7 @@ https://drive.google.com/drive/folders/1xghVPv2haytx1HxOOl0aD77w-fFzncdY?usp=sha
 The HRnet keypoint detection model was training using the 
 
 ## Step 5: A SAM + FasterRCNN based tracking model
-# SAM2_tutorial
+### SAM2_tutorial
 This step requires a GPU machine to work.
 First, let's install anaconda
 ```python
@@ -119,6 +119,8 @@ https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_large.pt
 and put the .pt file in the "...\segment-anything-2\checkpoints" folder
 
 Now you can run the script and make predictions.
+
+The SAM2_2obj_test_qt_GUI_csv_v3.py could track and segment 2 mice at the same time with zero shot capability. 
 
 
 ## Step 6: Differentiation of sniffing and grooming behavior
