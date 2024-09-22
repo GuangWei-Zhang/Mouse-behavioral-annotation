@@ -96,12 +96,18 @@ We incorporate SAM2 (Segment Anything Model v2) along with Faster R-CNN to creat
 The SAM2_2obj_test_qt_GUI_csv_v3.py script allows tracking and segmentation of two mice simultaneously with zero-shot capabilities.
 
 ## Step 6: Differentiation of Sniffing and Grooming Behavior
-In this step, we develop specific algorithms to differentiate between behaviors like sniffing and grooming. Using pose estimation and behavior-specific classifiers, we further enhance the behavioral annotation accuracy.
+In this step, we leverage RAFT (Recurrent All Pairs Field Transforms), to differentiate between mouse behaviors such as sniffing and grooming. Optical flow measures the motion of objects between consecutive frames in a video, providing valuable insight into subtle differences in movement patterns that distinguish specific behaviors.
+details see https://github.com/princeton-vl/RAFT
+Running RAFT on Video Frames: You can demo the pretrained RAFT model on a sequence of frames to generate optical flow maps:
 
-## Step 7: Visualization of Annotated Behaviors
-This step involves visualizing the annotated behaviors using various data visualization libraries such as Matplotlib and Seaborn. Behavioral events are overlayed onto video frames, enabling easy inspection and review.
+```bash
+python demo.py --model=models/raft-things.pth --path=demo-frames
+```
+The optical flow data generated using RAFT can differentiate subtle movements such as head bobbing during sniffing or repetitive body motions during grooming, providing a detailed characterization of mouse behavior. The sniffing would not cause a significant body motion while grooming would. 
 
-## Step 8: Verification by Human Annotator
+
+
+## Step 7: Verification by Human Annotator
 Finally, human annotators review the results produced by the pipeline. This ensures that the automated behavior classification matches human observations, serving as the final layer of validation.
 
 This pipeline offers a modular, scalable solution to mouse behavior annotation, combining the power of deep learning, computer vision, and manual curation for precise behavioral studies.
